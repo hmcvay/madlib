@@ -8,13 +8,22 @@ $(document).ready(function() {
     const verbInput = $("input#verb").val();
     const nounInput = $("input#noun").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    function upperCaseStrings(text) {
+      return text.toUpperCase();
+      // assign that class to the span
+    }
+
+    $(".person1").text(upperCaseStrings(person1Input));
+    $(".person2").text(upperCaseStrings(person2Input));
+    $(".animal").text(upperCaseStrings(animalInput));
+    $(".exclamation").text(upperCaseStrings(exclamationInput));
+    $(".verb").text(upperCaseStrings(verbInput));
+    $(".noun").text(upperCaseStrings(nounInput));
 
     $("#story").show();
   });
 });
+
+//write a style to assign uppercase via css stylesheet
+//person1Input.toUpperCase()
+//function to perform the task of uppercase inputs
