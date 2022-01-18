@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     function upperCaseStrings(text) {
       return text.toUpperCase();
-      // assign that class to the span
+      // assign that class to the span if you want
     }
 
     $(".person1").text(upperCaseStrings(person1Input));
